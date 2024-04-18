@@ -7,8 +7,7 @@ fun main(){
 
 fun puntosPalabra (palabra:String):Int{
     var puntuacion: Int=0
-    for (indice in 0 until palabra.length){
-        val letra: Char = palabra[indice]
+    for (letra in palabra){
         when (letra){
             'a','e','i','o','u','l','n','r','s','t' -> puntuacion+=1
             'd','g' -> puntuacion+=2
